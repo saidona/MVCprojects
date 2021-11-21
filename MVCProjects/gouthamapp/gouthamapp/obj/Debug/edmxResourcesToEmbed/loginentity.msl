@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GOUTHAMDATAModelStoreContainer" CdmEntityContainer="GOUTHAMDATAEntities1">
+    <EntitySetMapping Name="tblusers">
+      <EntityTypeMapping TypeName="GOUTHAMDATAModel.tbluser">
+        <MappingFragment StoreEntitySet="tblusers">
+          <ScalarProperty Name="empid_i" ColumnName="empid_i" />
+          <ScalarProperty Name="emp_designation_vc" ColumnName="emp_designation_vc" />
+          <ScalarProperty Name="Emp_Role_n" ColumnName="Emp_Role_n" />
+          <ScalarProperty Name="Employee_Name__vc" ColumnName="Employee_Name_ vc" />
+          <ScalarProperty Name="username_vc" ColumnName="username_vc" />
+          <ScalarProperty Name="password_vc" ColumnName="password_vc" />
+          <ScalarProperty Name="joindate_d" ColumnName="joindate_d" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

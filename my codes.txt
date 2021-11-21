@@ -1,0 +1,230 @@
+//// Class Component/////
+
+import React from "react";
+  
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { change: true };
+  }
+  render() {
+    return (
+      <div>
+        <button
+          onClick={() => {
+            this.setState({ change: !this.state.change });
+          }}
+        >
+          Click Here!
+        </button>
+        {this.state.change ? (
+          <h1>Welcome to GeeksforGeeks</h1>
+        ) : (
+          <h1>A Computer Science Portal for Geeks</h1>
+        )}
+      </div>
+    );
+  }
+}
+  
+export default App;
+//////////
+
+
+
+
+//////functionalcomponent/////
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Player from './Player'
+function App() {
+   return (
+      <div className="App">
+         <Player/>
+         <Player/>
+         <Player/>
+      </div>
+   );
+}
+export default App;
+
+////useState////////
+const [state, setState] = useState(initialState);4
+
+setState(newState);
+
+//Heiher order component////
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+
+////use Reducer ///////////
+const [state, dispatch] = useReducer(reducer, initialState);
+
+////useeffect/////
+useEffect(() => {
+  const subscription = props.source.subscribe();
+  return () => {
+    // Clean up the subscription
+    subscription.unsubscribe();
+  };
+});
+
+
+/////useCallbacks//////
+const memoizedCallback = useCallback(
+  () => {
+    doSomething(a, b);
+  },
+  [a, b],
+);
+
+//////useMemo//////
+const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+
+
+///////use ref //////
+const refContainer = useRef(initialValue);
+
+
+/////////////useImapharativeHandler////////
+useImperativeHandle(ref, createHandle, [deps])
+
+ex:
+function FancyInput(props, ref) {
+  const inputRef = useRef();
+  useImperativeHandle(ref, () => ({
+    focus: () => {
+      inputRef.current.focus();
+    }
+  }));
+  return <input ref={inputRef} ... />;
+}
+FancyInput = forwardRef(FancyInput);
+
+
+////////useDebugValue/////
+useDebugValue(value)
+
+
+  
+
+
+//// Top 2 Salary
+select Top 1 salary from (select Top 2 salary from Employee order by salary Desc) Result order by salary
+
+or
+
+go 
+with Results as
+{
+(select salary, DENSE_RANK() over (order by desc) as DENSERANK from Employee) select Top 3 salary from Result where Result.Dense_Rank=3
+
+)
+
+
+/////////JOINs
+
+//INNER JOIN 
+select employee.empid,employee.empname,project.projectname,project.amount from employee inner join project on (employee.empid=project.empid)
+
+//Left Join 
+select employee.empid,employee.empname,project.projectname,project.amount from employee left join project on (employee.empid=project.empid)
+
+//Right Join 
+select employee.empid,employee.empname,project.projectname,project.amount from employee right join project on (employee.empid=project.empid)
+
+//full join 
+select employee.empid,employee.empname,project.projectname,project.amount from employee full join project on (employee.empid=project.empid)
+
+
+
+
+///////////Store Procedure
+
+CREATE PROCEDURE SelectAllCustomers
+ @City nvarchar(30),
+ @PostalCode nvarchar(10)
+AS
+SELECT * FROM Customers WHERE City = @City AND PostalCode = @PostalCode
+GO;
+
+
+///////////Alter Table
+ALTER TABLE table_name ADD column_name datatype;
+
+////////Trigger Insert
+//for insert...........
+Createtrigger tr_employee_forinsert
+on employee
+for insert
+as
+begin
+  declare @Id int
+ select @Id=Id from inserted
+  insert into auditname values('new employee With Id='+cast(@id as nvarchar(5))+'is added at='+cast(getdate() as nvarchar(20))
+ end
+
+/////for delete...............
+Create trigger tr_employee_fordeleted
+on employee
+for Delete
+as
+begin
+  declare @Id int
+ Select @Id = Id from Deleted
+  insert into auditname
+  values('new employee With Id='+cast(@Id as nvarchar(5))+'is added at='+cast(getdate() as nvarchar(20)))
+ end
+
+
+//////////////View Create
+create view sttuu as  select * from auditname
+
+//////////////temp Table 
+create table #student
+ (
+ id int,
+ name varchar(50)
+ )
+
+
+//////insert values in store Procedure ////////
+
+public class ItemRepository
+    {
+        SqlConnection con;
+        //ToHandle connection related activities  
+        private void connection()
+        {
+            string constr = ConfigurationManager.ConnectionStrings["SqlConn"].ToString();
+            con = new SqlConnection(constr);
+        }
+        //To AddComplaint details  
+        public string AddItem(ItemModel Obj)
+        {
+            DynamicParameters ObjParm = new DynamicParameters();
+            ObjParm.Add("@ItemName",Obj.ItemName);
+            ObjParm.Add("@Description",Obj.Description);
+            ObjParm.Add("@RefID",dbType: DbType.String,direction: ParameterDirection.Output, size: 5215585);
+            connection();
+            con.Open();
+            con.Execute("usp_InsertItem",ObjParm, commandType: CommandType.StoredProcedure);
+            //Gettingthe out parameter value of stored procedure 
+            var RefID = ObjParm.Get<string>("@RefID");
+            con.Close();
+            return RefID;
+        } 
+    }
+
+
+
+https://www.youtube.com/watch?v=avOtyK-wfOg ,,,,resturents app 
+
+
+
+
+
+
+
+
+

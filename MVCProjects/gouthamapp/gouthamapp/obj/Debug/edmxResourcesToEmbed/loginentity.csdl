@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GOUTHAMDATAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbluser">
+    <Key>
+      <PropertyRef Name="empid_i" />
+    </Key>
+    <Property Name="empid_i" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_designation_vc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Emp_Role_n" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Employee_Name__vc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="username_vc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password_vc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="joindate_d" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="GOUTHAMDATAEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblusers" EntityType="Self.tbluser" />
+  </EntityContainer>
+</Schema>

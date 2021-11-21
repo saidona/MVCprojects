@@ -1,0 +1,50 @@
+1. Total Experience: 4.10y
+2. Relevant Exp:6
+3. Current CTC:6LPA
+4. Expected CTC:13LPA
+5. Current Organization Name: Accenture
+6. Payroll Company (if any):Gap Bridge Software solution.
+7. Notice Period:20days
+8. Current Location:Nirmal,Telangana.
+9. Preferred Location:Hyderabad , Telangana.
+10. Pan Number: CORPD2940F
+11. Number of projects: 6 Projects.
+
+
+
+Total Exp in React Js:8 Months
+Rel Exp in Javascript: 2 Years
+Rel Exp in Typescript: 8 Months
+Rel Exp in HTML5: 2 Years
+Rel Exp in CSS: 2 Years
+Rel Exp in Redux:
+Current CTC: 6LPA
+Expected CTC: 12LPA
+Current Location: Nirmal ,Telangana
+Preferred Location: Hyderabad 
+Current Company name: Accenture ( Pay roll company Gap Bridge Softaware Solutions)
+Official Notice Period: 15 days.
+If serving Notice Period then Joining Time: Not Serving
+Full Name (As per Pancard): Donagiri Saikrishna
+Alternate contact Number:9550238564
+Qualification & Passed out Year & University: B,tech,2016
+
+
+
+
+
+
+
+
+const Submit=()=>{}
+
+<input  onClick={Submit}   />
+
+
+
+
+
+
+
+
+

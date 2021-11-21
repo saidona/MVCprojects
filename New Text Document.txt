@@ -1,0 +1,310 @@
+css
+_____
+
+
+<html>
+<head>
+<title>
+total tutorial</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<style>
+  h1{color:orange
+}
+h2{color:blue; font-style:italic;
+}
+span{font-weight:bold; color:red;
+}
+</style>
+</head>
+<boby>
+<center> <h1>HOW TO LINK CSS RULES IN WEBSITE ?</h1></center>
+<hr>
+<h2>Three Types to link in website.</h2>
+<ol type="1">
+<font family="roboto">
+
+<li>Inline Style (Inside The Tag to Style)</li>
+<li>Internal Style (Inside The Head Tag)</li>
+<li>External Style (External*.CSS File)</li>
+
+</body>
+</html>
+
+TABLE
+___________
+
+
+<html>
+<head><title>html table</title></head>
+<style type="text/css">
+th{
+   color:blue;
+}
+h3{
+  color:red;
+}
+</style>
+<body>
+<center><h1>STATE BOARD OF TECHNICAL EDUCATION AND TRAINING-TELANGANA</h1></center><br/><br/>
+<table border="2" cellpadding="5" cellspacing="10" align="center" >
+<tr>
+<th>PIN</th><td>18174-M-048</td><th>Scheme</th><td>C18</td></tr>
+
+<tr><th>Name</th><td colspan="3">thudigani vamshipriya</td></tr>
+
+<tr><th>Father Name</th> <td colspan="3">thudigani narsaiah</td></tr>
+
+<tr><th>Branch</th><td colspan="3">Mechanical Engineering</td></tr>
+
+<tr><th>Examination Center</th><td colspan="3">174-Govt.Polytechnic</td></tr>
+
+<tr><th>Total Fee Paid</th><td>650</td><th>Actual Attendance %</th><td>76</td></tr>
+
+</table>
+<h3>Instructions:</h3>
+<p><b>1.Hall-ticket issued to you is an important document preserve carefully upto declaration of the final result.<b></p>
+<p>2.no candidate will be allowed to enter the examination hall without proper hall-ticket</p>
+<p>3.candidate shall arrive at the examination center at least 30 minutes before the commencement of the examination.While enterind the examination hall every student shall deposite all books ,personal belongings ectat the counter provided.</p>
+<p style="color:maroon;background=color:yellow"> 4.every student shall fallow the regulations during examinations, failing which he/she wiil be booked under malpractice case</p>
+</body>
+</html>
+
+FORM 2
+____________
+
+
+<html>
+<head>
+<title>form.html</title>
+</head>
+<center><body>
+<h1>SIGNUP FORM</h1>
+<table cellspacing="10" cellpadding="5">
+<tr><td>First Name<td><input type="text" autofocus required/></td></tr>
+<tr><td>Last Name<td><input type=""text"required/></td></tr>
+<tr><td>Email Id<td><input type="text"required/></td></tr>
+<tr><td>Mobile Number<td><input type="number"required/></td></tr>
+<tr><td>Gender <td><input type="radio"/>male<input type="radio"/>female </td></tr>
+<tr><td><input type="submit"/></td></tr>
+</table>
+</body></center>
+</html> 
+FORM
+_________________
+
+<html>
+<title> all reservation forms </title>
+<style type="text/css">
+label{
+width:100px;
+display:inline-block;
+}
+
+</style>
+<body>
+
+<center/><h1>RESERVATION FORM</h1><br/><br/>
+<div id="form">
+<form >
+
+
+Name *            :     <input type="text"  size="30" autofocus name="name" placeholder="enter your name" required /><br/><br/>
+Email*            :     <input type="email" name="email" placeholder="enter your email"/><br/><br/>
+Room Type         :     <select>
+
+                        <option value="select">select</option>
+                        <option value="normal">normal</option>
+                        <option value="special">special</option>
+                        </select><br/><br/>
+Arrival Date*     :     <input type="text"/><br/><br/>
+Number of Guests* :     <input type="number" max="5"/><br/><br/>
+Free Pickup       :     <input type="radio"/>yes
+                        <input type="radio"/>no </div><br/>
+Flight Number     :     <input type="number" placeholder="Flight Number"/><br/><br/>
+Special Request   :     <text area rows="5" cols="60"> </text area><br/><br/>
+                        <input type="submit"/> 
+                        <input type="reset" value="clear"/>
+                        
+</form>
+</div>
+</body>
+</html>
+
+
+FORM
+_______
+
+<html>
+<title>form.html</title>
+<body>
+<form action="form.html" method="get" target="blank"><br/><br/>
+<input type="text" name="username" size="25" autofocus placeholder="enter your name"  required /><br/><br/>
+<input type="password" name="password"size="25" placeholder="enter your password"/><br/><br/>
+<input type="father's name" size="25"  placeholder="enter your father name"/><br/><br/>
+<input type="email"  placeholder="enter your email"/><br/><br/>
+<input type="radio" name="gender"/>male
+<input type="radio" name="gender"/>female
+<input type="file"><br/><br/>
+<input type="submit" value="register">
+<input type="reset" value="clear">
+</body>
+</html>
+
+
+
+
+FRAMESET
+__________
+
+<html>
+<title>frame.html</title>
+<frameset rows="50%,50%">
+<frame name="frame1" src="frame1.html"/>
+<frame name="frame2" src="frame2.html"/>
+</frameset>
+</html>
+
+
+
+LINK[standard link,visited link,active link]
+_____________________________________________
+
+
+<html>
+<title>html for begeners</title>
+<body link="black" vlink="red">
+ <a href="https://web.whatsapp.com" target="blank">whatsapp</a>||
+ <a href="https://www.facebook.com" target="blank">facebook</a>||
+  <a href="https://www.youtube.com" target="blank">youtube</a>||
+</body>
+</html>
+
+
+CELLPADDING,SPACING,ROWPSAN,COLSPAN,TABLE ROW,TABLE COLUMN
+___________________________________________________________
+
+<html>
+<title>HTML FOR BEGENERS
+</title>
+<body><h1> HTML</h1> <hr>
+<table border="1" cellpadding="10" cellspacing="10" align="center">
+<th>S.NO</th><th>NAMES</th><th>MARKS</th>
+<tr><td>1</td><td>vamshipriya</td><td>9</td></tr>
+<tr><td>2</td><td>deepika</td><td>9</td></tr>
+<tr><td>3</td><td>shailaja</td><td>9</td></tr>
+</table>
+</body>
+</html>
+
+TEXT LINK
+____________
+
+<html>
+<title>html for begeners</title>
+<body>
+<hr>||<a href="https://www.youtube.com/" target="blank"> YOUTUBE||<a href="https://www.google.com/" target="blank">GOOGLE||</a><hr>
+</body>
+</html>
+
+
+
+WEBSITE
+___________
+
+<html>
+<title>html for begeners</title>
+<center><h1>HTML</h1></center>
+<body>
+<hr>||<a href="https://www.youtube.com/">YOUTUBE||<a href=" https://console.firebase.google.com">GOOGLE||</a><hr>
+<hr>||<ahref=""||></a><hr>
+<p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. ... HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. HTML elements are the building blocks of HTML pages</p>
+</body>
+</html>
+
+
+
+INSERT IMAGE,BORDER,SIZE IN PX
+_______________________________
+
+<html>
+<title>html for begeners</title>
+<head>
+<h1><center>DTP</center></h1></head>
+<body><hr>
+<center><img src="https://helpdeskgeek.com/wp-content/pictures/2009/05/html.jpg.optimal.jpg"border="5" ></center>
+<p>HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.</p>
+
+</body>
+</html>
+
+
+
+ORDERED LIST
+____________
+
+<html>
+<title>html for begeners</title>
+<head>
+<h1><center>DTP</center></h1></head>
+<body><hr>
+<font face="b" color="blue" type="a" >
+<ol type="i">
+<li>PHOTO SHOP</li>
+<li>PAGE MAKER</li>
+<li>CORELDRAW</li>
+<li>TELUGU TYPING</li></font></ol>
+
+UN ORDERED LIST
+_______________
+ stating tag <ul>,
+ ending  tag </ul>
+
+FORMAT
+______
+
+<HTML>
+<TITLE> about html</TITLE>
+<BODY>
+<h1>Text Format</h1><hr>
+<b>COMMAND 1</b><br>
+<u>COMMAND 2</u>
+<i>COMMAND 3</i><br>
+<strike>COMMAND 4</strike>
+<sup>a2</sup>
+<sub>b2<br></sub>
+<strong>COMMAND</strong>
+
+
+<HTML>
+<TITLE> about html</TITLE>
+<BODY>
+<h1>Text Format</h1><hr>
+<b>COMMAND 1</b><br>
+<u>COMMAND 2</u><br>
+<i>COMMAND 3</i><br>
+<strike>COMMAND 4</strike><br>
+<sup>a2</sup><br>
+<sub>b2<br></sub>
+<strong>COMMAND</strong>
+<hr><hr>
+<marquee><font face="impact" size="6" color="blue">C,C++,JAVA,.NET FRAME WORK,REACT JS</font> </marquee><hr><hr>
+
+MORQUEE TEST( SCROLLING)
+____________________________
+<HTML>
+<TITLE> about html</TITLE>
+<BODY>
+<h1>Text Format</h1><hr>
+<b>COMMAND 1</b><br>
+<u>COMMAND 2</u><br>
+<i>COMMAND 3</i><br>
+<strike>COMMAND 4</strike><br>
+<sup>a2</sup><br>
+<sub>b2<br></sub>
+<strong>COMMAND</strong>
+<hr><hr>
+<marquee><font face="impact" size="6" color="blue">C,C++,JAVA,.NET FRAME WORK,REACT JS</font> </marquee><hr><hr>
+
+
+

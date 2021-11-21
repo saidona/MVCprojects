@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GOUTHAMDATAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblusers">
+    <Key>
+      <PropertyRef Name="empid_i" />
+    </Key>
+    <Property Name="empid_i" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="emp_designation_vc" Type="varchar" MaxLength="50" />
+    <Property Name="Emp_Role_n" Type="varchar" MaxLength="50" />
+    <Property Name="Employee_Name_ vc" Type="varchar" MaxLength="50" />
+    <Property Name="username_vc" Type="varchar" MaxLength="50" />
+    <Property Name="password_vc" Type="varchar" MaxLength="50" />
+    <Property Name="joindate_d" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="GOUTHAMDATAModelStoreContainer">
+    <EntitySet Name="tblusers" EntityType="Self.tblusers" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
